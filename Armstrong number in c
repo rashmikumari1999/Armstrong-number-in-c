@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+int main()
+{
+    int N,x,s,r;
+    printf("enter Armstrong number");
+    scanf("%d",&N);
+    for(N=1;N<=1000;N++)
+    {
+        s=0;
+        x=N;
+        while(x!=0)
+        {
+        r=N%10;
+        s=s+r*r*r;
+        x=x/10;
+    }
+    if(s==N)
+    printf("Armstrong number is=%d",N);
+    }
+}
